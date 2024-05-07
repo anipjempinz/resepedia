@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resep Nasi Goreng</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<style>
+ /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Jarak antara kolom */
+}
+
+.ingredients {
+    order: 1; /* Memindahkan bahan-bahan ke kolom pertama (kiri) */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.steps {
+    order: 2; /* Memindahkan langkah-langkah ke kolom kedua (kanan) */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styles */
+.recipe-title {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+/* Ingredients and Steps Styles */
+.ingredients h2,
+.steps h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.ingredients ul,
+.steps ol {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.ingredients li,
+.steps li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-left: 3px solid #fac031;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .recipe-title {
+        font-size: 28px;
+    }
+
+    .ingredients h2,
+    .steps h2 {
+        font-size: 20px;
+    }
+
+    .ingredients li,
+    .steps li {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr; /* Mengubah layout menjadi satu kolom pada layar kecil */
+    }
+
+    .ingredients,
+    .steps {
+        padding: 15px;
+    }
+
+    .ingredients li,
+    .steps li {
+        font-size: 12px;
+    }
+}
+</style>
+
+</head>
+<body>
+<a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i></a>
+<h1 class="recipe-title">Resep Nasi Goreng</h1>
+<div class="container">
+    <div class="ingredients">
+        <h2>Bahan-bahan:</h2>
+        <ul>
+            <li>300 gram nasi putih, dingin</li>
+            <li>200 gram ayam, potong dadu</li>
+            <li>2 buah bawang merah, iris tipis</li>
+            <li>3 siung bawang putih, cincang halus</li>
+            <li>2 buah cabe merah, iris serong</li>
+            <li>2 butir telur</li>
+            <li>2 sendok makan kecap manis</li>
+            <li>1 sendok teh garam</li>
+            <li>1 sendok teh merica</li>
+            <li>3 sendok makan minyak goreng</li>
+        </ul>
+    </div>
+    <div class="steps">
+        <h2>Langkah-langkah:</h2>
+        <ol>
+            <li>Tumis bawang merah dan bawang putih hingga harum.</li>
+            <li>Masukkan ayam dan cabe merah, tumis hingga ayam matang.</li>
+            <li>Masukkan telur, aduk hingga telur matang.</li>
+            <li>Tambahkan nasi putih, kecap manis, garam, dan merica. Aduk rata.</li>
+            <li>Tuangkan minyak goreng, aduk terus hingga nasi goreng matang dan beraroma.</li>
+            <li>Sajikan nasi goreng hangat.</li>
+        </ol>
+    </div>
+</div>
+</body>
+</html>
